@@ -19,7 +19,7 @@ fn test_format_string(){
     //打印实现了Debug接口的信息
     println!("{:?}","test");
     assert_eq!("\"test\"",format!("{:?}","test"));
-    //打印实现了Debug接口的带换行和缩进信息
+    //打印实现了Debug接口的带换行和缩进的信息
     assert_eq!("(\n    \"test1\",\n    \"test2\"\n)",format!("{:#?}",("test1","test2")));
     //命名参数
     assert_eq!("x y y",format!("{a} {b} {b}",a="x",b="y"));
